@@ -29,6 +29,9 @@ const state = {
 const updateUI = {
 	changePlayButton: () => {
 		elements.playImage.src = state.isPlaying ? './assets/icons/actions/pause.png' : './assets/icons/actions/play.png'
+
+
+
 	},
 
 	changeMuteButton: () => {
@@ -36,6 +39,8 @@ const updateUI = {
 	},
 
 	progress: () => {
+
+    
 		if (!isNaN(state.audio.duration)) {
 			const percent = (state.audio.currentTime / state.audio.duration) * 100
 			elements.progressBar.style.width = `${percent}%`
