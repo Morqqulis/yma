@@ -1,9 +1,9 @@
 const musicList = [
-	'../assets/audio/1.mp3',
-	'../assets/audio/2.mp3',
-	'../assets/audio/3.mp3',
-	'../assets/audio/4.mp3',
-	'../assets/audio/5.mp3',
+	'./assets/audio/1.mp3',
+	'./assets/audio/2.mp3',
+	'./assets/audio/3.mp3',
+	'./assets/audio/4.mp3',
+	'./assets/audio/5.mp3',
 ]
 const elements = {
 	playBtn: document.querySelector('#play-btn'),
@@ -28,11 +28,11 @@ const state = {
 
 const updateUI = {
 	changePlayButton: () => {
-		elements.playImage.src = state.isPlaying ? '../assets/icons/actions/pause.png' : '../assets/icons/actions/play.png'
+		elements.playImage.src = state.isPlaying ? './assets/icons/actions/pause.png' : './assets/icons/actions/play.png'
 	},
 
 	changeMuteButton: () => {
-		elements.muteImage.src = state.isMuted ? '../assets/icons/mute.png' : '../assets/icons/sound.png'
+		elements.muteImage.src = state.isMuted ? './assets/icons/mute.png' : './assets/icons/sound.png'
 	},
 
 	progress: () => {
